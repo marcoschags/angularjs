@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+</head>
+<body>
+    <div ng-controller="CtrlApp">
+        <label>Nome</label>
+        <input type="text" ng-model="nome" title=""/>
+        <h1>{{nome}}, {{cidade}}</h1>
+    </div>
+    <script>
+        var CtrlApp = function ($scope) {
+            $scope.nome = "Marcos";
+            $scope.cidade = "Petrolina";
+            $scope.$watch('nome', function () {
+                console.log($scope.nome);
+            });
+        };
+    </script>
+</body>
+</html>
