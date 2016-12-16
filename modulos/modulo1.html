@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="MeuModulo">
+<head>
+    <meta charset="UTF-8">
+    <title>modulo1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-controller="CtrlModulo">
+    Meu nome é {{nome}}
+</div>
+
+<script>
+    angular.module('MeuModulo', [])
+        .controller('CtrlModulo', function ($scope) {
+            $scope.nome = "Marcos"
+        });
+</script>
+
+</body>
+</html>
