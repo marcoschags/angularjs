@@ -7,15 +7,14 @@
 <body>
 <div ng-controller="CtrlPessoas">
     <h1>Sistema de gerenciamento de pessoas</h1>
-    <h2>Listagem de Pessoas</h2>
 
-    <ul>
-        <li ng-repeat="pessoa in pessoas">
-            {{pessoa.nome}}, {{pessoa.cidade}}
-        </li>
-    </ul>
+    <div ng-view></div>
+
 </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-route.min.js"></script>
+
 <script src="pessoas.js"></script>
 </html>
