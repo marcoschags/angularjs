@@ -14,4 +14,12 @@ angular
             {nome: "João", cidade: "Parnaíba"},
             {nome: "Cleber", cidade: "Barueri"}
         ];
+    })
+    .controller('CtrlAdicionar', function ($scope) {
+        $scope.add = function () {
+            $scope.pessoas.push({
+               nome: $scope.pessoa.nome,
+               cidade: $scope.pessoa.cidade
+            });
+        };
     });
